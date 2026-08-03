@@ -1,0 +1,267 @@
+.details-page {
+    background-color: #242424;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.details-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 25px auto;
+    background-color: #121111;
+    color: #888;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #e50914;
+    padding: 3px 17px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button:hover {
+  background-color: #f40612;
+  cursor: pointer;
+}
+
+.back-button:active {
+    background-color: #df1620;
+}
+
+.details-poster {
+    width: 270px;
+    height: 370px;
+    border-radius: 10px;
+    margin-top: 50px;
+    flex-shrink: 0;
+}
+
+.details-poster img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.details-info {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.details-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 4px;
+    color: white;
+    margin: 0 0 0.5rem;
+    line-height: 1;
+}
+
+.details-list {
+    font-size: 1rem;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+    color: #6b6b80;
+}
+
+.genres {
+    color: #e50914;
+}
+
+.details-tagline {
+    color: #e50914;
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+}
+
+.details-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details-rating-average, .details-rating-label {
+    color: #f5c518;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.details-tmdb {
+    color: #888;
+    font-size: 1rem;
+}
+
+.details-overview {
+    color: #888;
+    font-size: 1rem;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.details-credits {
+    color: #888;
+}
+
+.crew {
+    color: white;
+}
+
+.details-favorite {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.details-favorite:hover {
+  background-color: #f40612;
+  cursor: pointer;
+}
+
+.details-favorite:active {
+    background-color: #df1620;
+}
+
+.details-video, .details-cast, .details-similar {
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
+.details-title-trailer, .details-title-cast, .details-title-similar {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 3.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.trailer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trailer iframe {
+    border-radius: 10px;
+}
+
+.cast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cast-card {
+    background-color: #1a1a1a;
+    width: 200px;
+    height: 320px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cast-card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.actor-name {
+    color: white;
+    padding: 5px 10px;
+}
+
+.actor-character {
+    color: #6b6b80;
+    padding: 0 10px 4px;
+}
+
+.details-similar-sub {
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
+    color: white;
+    margin-bottom: 10px;
+    padding: 1rem;
+}
+
+.details-similar-sub .similar-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(0.75rem, 5vw, 2rem);
+    letter-spacing: 4px;
+    color: #e50914;
+    margin: 0 0 0.5rem;
+    line-height: 1;
+}
+
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .details-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px 30px;
+    }
+
+    .details-poster {
+        width: auto;
+        height: auto;
+        margin: 20px auto 0;
+    }
+
+    .details-list {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .details-content {
+        display: block;
+    }
+
+    .details-info-list {
+        margin-bottom: 20px;
+    }
+
+    .details-poster {
+        margin: 50px auto;
+    }
+
+    .details-list {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+}

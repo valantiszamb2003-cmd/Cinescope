@@ -1,0 +1,77 @@
+.favorites {
+    background-color: #242424;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem 0;
+}
+
+.favorites h2 {
+    background: linear-gradient(135deg, #fff 0%, #e50914 60%, #ff6b35 100%);    line-height: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin: 90px auto 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.favorites-movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.favorites-empty {
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 600px;
+    margin: 70px auto;
+    padding: 0.5rem 2rem 4rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.favorites-empty h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #e50914;
+}
+
+.favorites-empty p {
+    color: #999;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 1350px) {
+    .favorites-movies-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .favorites-movies-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .favorites-movies-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .favorites-movies-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
