@@ -13,7 +13,7 @@ https://cinescope-movie-app.netlify.app
 - Fast API fetching using async/await  
 - Modern and consistent UI styling
 
-##Installation
+Installation
 
 - git clone https://github.com/valantiszamb2003-cmd/Cinescope
 - cd Cinescope
