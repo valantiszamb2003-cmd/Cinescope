@@ -15,7 +15,7 @@ https://cinescope-movie-app.netlify.app
 
 ##Installation
 
-git clone https://github.com/valantiszamb2003-cmd/Cinescope
-cd Cinescope
-npm install
-npm run dev
+- git clone https://github.com/valantiszamb2003-cmd/Cinescope
+- cd Cinescope
+- npm install
+- npm run dev
